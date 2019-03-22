@@ -8,8 +8,6 @@ def alphabetize(arr)
     i = 0
     until word1[i] != word2[i]
       i += 1
-      puts word1[i]
-      puts word2[i]
     end
     
     word1[i] <=> word2[i]
