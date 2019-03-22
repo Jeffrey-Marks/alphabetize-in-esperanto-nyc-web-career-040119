@@ -10,7 +10,7 @@ def alphabetize(arr)
       i += 1
     end
     
-    word1[i] <=> word2[i]
+    ESPERANTO_ALPHABET.index(word1[i]) <=> ESPERANTO_ALPHABET.index(word2[i])
   end
 
   arr
