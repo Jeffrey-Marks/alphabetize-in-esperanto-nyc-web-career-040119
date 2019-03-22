@@ -1,17 +1,9 @@
 ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 
 def alphabetize(arr)
-  
-  arr.sort do |word1, word2|
-    shorter_word = word1 < word2 ? word1 : word2
-    
-    i = 0
-    until word1[i] != word2[i]
-      i += 1
+  arr.sort_by do |word|
+    word.split('').collect do |letter|
+      ESPERANTO_ALPHABET.index(letter)
     end
-    
-    ESPERANTO_ALPHABET.index(word1[i]) <=> ESPERANTO_ALPHABET.index(word2[i])
   end
-
-  arr
 end
