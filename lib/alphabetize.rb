@@ -1,6 +1,5 @@
 ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 
-
 def alphabetize(arr)
   
   arr.sort do |word1, word2|
